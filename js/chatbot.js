@@ -47,21 +47,10 @@ function showResult() {
   resultSection.style.display = 'block';
 }
 
-function isNonsenseAnswer(text) {
-  // 초성만 입력(ㄱㄴㄷ, ㅇㅇㅇ 등) 또는 2글자 이하, 또는 의미없는 반복
-  const nonsenseRegex = /^[ㄱ-ㅎㅏ-ㅣ]{2,}$|^([a-zA-Z])\1{2,}$|^.{1,2}$/;
-  return nonsenseRegex.test(text);
-}
-
 chatForm.addEventListener('submit', function(e) {
   e.preventDefault();
   const text = userInput.value.trim();
   if (!text) return;
-  if (isNonsenseAnswer(text)) {
-    addMessage('이봐, 지금 장난하나? 알아듣게 말해.', 'bot');
-    userInput.value = '';
-    return;
-  }
   addMessage(text, 'user');
   userAnswers.push(text);
   userInput.value = '';
