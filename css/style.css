@@ -1,0 +1,108 @@
+body {
+  font-family: 'Pretendard', 'Noto Sans KR', Arial, sans-serif;
+  background: #f7f8fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #23395d;
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0 2px 8px rgba(35,57,93,0.08);
+}
+.subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #c9d6e3;
+}
+main {
+  max-width: 480px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(35,57,93,0.09);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+#chatbot-section {
+  margin-bottom: 2rem;
+}
+#chat-window {
+  min-height: 220px;
+  max-height: 320px;
+  overflow-y: auto;
+  background: #f0f4f8;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(35,57,93,0.04);
+}
+.message {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+.message.bot {
+  justify-content: flex-start;
+}
+.message.user {
+  justify-content: flex-end;
+}
+.bubble {
+  max-width: 75%;
+  padding: 0.75rem 1rem;
+  border-radius: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  box-shadow: 0 1px 4px rgba(35,57,93,0.08);
+}
+.bubble.bot {
+  background: #e3eaf6;
+  color: #23395d;
+  border-bottom-left-radius: 4px;
+}
+.bubble.user {
+  background: #23395d;
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+#chat-form {
+  display: flex;
+  gap: 0.5rem;
+}
+#user-input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #c9d6e3;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+}
+#chat-form button {
+  background: #23395d;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#chat-form button:hover {
+  background: #1a2b49;
+}
+#result-section {
+  background: #f0f4f8;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(35,57,93,0.04);
+}
+footer {
+  text-align: center;
+  color: #b0b8c1;
+  font-size: 0.95rem;
+  margin: 2rem 0 1rem 0;
+}
